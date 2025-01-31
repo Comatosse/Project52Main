@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award Resources - Project52</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Project52</a>
+        <ul class="nav-links">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolios.html" class="nav-link active">Portfolios</a></li>
+            <li><a href="blog.html" class="nav-link">Blog & Activity</a></li>
+            <li><a href="foundation.html" class="nav-link">Foundation52</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider"></span>
+        </label>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search awards...">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Season Filter</h3>
+                <select id="season-select" class="season-select">
+                    <option value="">All Seasons</option>
+                    <option value="2024 INTO THE DEEP">INTO THE DEEP</option>
+                    <option value="2023 CENTERSTAGE">CENTERSTAGE</option>
+                    <option value="2022POWERPLAY">POWERPLAY</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Award Categories</h3>
+                <label class="filter-option">
+                    <input type="checkbox" value="Inspire">
+                    <span class="checkmark"></span>
+                    Inspire
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Think">
+                    <span class="checkmark"></span>
+                    Think
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Connect">
+                    <span class="checkmark"></span>
+                    Connect
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Innovate">
+                    <span class="checkmark"></span>
+                    Innovate
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Control">
+                    <span class="checkmark"></span>
+                    Control
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Motivate">
+                    <span class="checkmark"></span>
+                    Motivate
+                    <span class="count">0</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" value="Design">
+                    <span class="checkmark"></span>
+                    Design
+                    <span class="count">0</span>
+                </label>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="controls-container">
+                <div class="controls-left">
+                    <div class="sort-group">
+                        <select id="sort-select" class="sort-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="success">Most Successful</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <button class="view-toggle grid-view active">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-toggle list-view">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Document Grid -->
+            <div class="document-grid">
+                <!-- Documents will be loaded from static data -->
+            </div>
+        </main>
+    </div>
+
+    <script src="portfolios.js"></script>
+</body>
+</html>

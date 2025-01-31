@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Activity - Project52</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Project52</a>
+        <ul class="nav-links">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolios.html" class="nav-link">Portfolios</a></li>
+            <li><a href="blog.html" class="nav-link active">Blog & Activity</a></li>
+            <li><a href="foundation.html" class="nav-link">Foundation52</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider"></span>
+        </label>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="header-content">
+            <h1>Latest Updates & Insights</h1>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search articles...">
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <div class="featured-post">
+                <!-- Featured post will be inserted here -->
+            </div>
+
+            <div class="post-filters">
+                <div class="filter-pills">
+                    <button class="filter-pill active" data-category="all">All</button>
+                    <button class="filter-pill" data-category="Updates">Updates</button>
+                    <button class="filter-pill" data-category="Tutorials">Tutorials</button>
+                    <button class="filter-pill" data-category="Events">Events</button>
+                    <button class="filter-pill" data-category="Tips">Tips & Tricks</button>
+                </div>
+                <select id="time-select" class="time-select">
+                    <option value="">All Time</option>
+                    <option value="week">Past Week</option>
+                    <option value="month">Past Month</option>
+                    <option value="year">Past Year</option>
+                </select>
+            </div>
+
+            <div class="posts-container">
+                <div class="posts-grid">
+                    <!-- Posts will be dynamically inserted here -->
+                </div>
+                <button class="load-more">Load More Posts</button>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="trending-section">
+                <h2>Trending</h2>
+                <div class="trending-posts">
+                    <!-- Trending posts will be inserted here -->
+                </div>
+            </div>
+            
+            <div class="tags-section">
+                <h2>Popular Tags</h2>
+                <div class="tags-cloud">
+                    <!-- Tags will be inserted here -->
+                </div>
+            </div>
+
+            <div class="newsletter-section">
+                <h2>Stay Updated</h2>
+                <p>Get the latest Project52 news and updates delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

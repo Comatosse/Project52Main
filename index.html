@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project52</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Project52</a>
+        <ul class="nav-links">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolios.html" class="nav-link">Portfolios</a></li>
+            <li><a href="blog.html" class="nav-link">Blog & Activity</a></li>
+            <li><a href="foundation.html" class="nav-link">Foundation52</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider"></span>
+        </label>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow-container">
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="slide fade">
+            <img src="https://robolancers.com/backend/wp-content/uploads/2022/12/52560169305_7faf7dc88b_o-2000x1200.jpg" alt="Robotics Competition Image">
+            <div class="slide-text">
+                <h2>Welcome to Project52</h2>
+                <p>Innovating the future of robotics</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="https://sgs.org/wp-content/uploads/2023/12/Robotics-FTC-at-SGS23-1-cropped.jpg" alt="FTC Robotics Competition">
+            <div class="slide-text">
+                <h2>Engineering Excellence</h2>
+                <p>Pushing the boundaries of what's possible</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="https://i0.wp.com/firstroboticscanada.org/wp-content/uploads/2024/07/Argosy-2.png" alt="FIRST Robotics Competition">
+            <div class="slide-text">
+                <h2>Community Driven</h2>
+                <p>Building tomorrow together</p>
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="scroll-arrow">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Info Columns Section -->
+    <section class="info-columns">
+        <div class="column">
+            <div class="circle-image">
+                <img src="innovation.jpg" alt="Innovation">
+            </div>
+            <h3>Innovation</h3>
+            <p>Pushing the boundaries of robotics with cutting-edge technology and creative solutions.</p>
+        </div>
+
+        <div class="column">
+            <div class="circle-image">
+                <img src="education.jpg" alt="Education">
+            </div>
+            <h3>Education</h3>
+            <p>Fostering learning and growth through hands-on experience and mentorship.</p>
+        </div>
+
+        <div class="column">
+            <div class="circle-image">
+                <img src="community.jpg" alt="Community">
+            </div>
+            <h3>Community</h3>
+            <p>Building a strong network of passionate individuals dedicated to robotics.</p>
+        </div>
+    </section>
+
+    <!-- Sponsors Carousel -->
+    <section class="sponsors-section">
+        <div class="sponsor-track">
+            <div class="sponsor-content">
+                <!-- First set of logos -->
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+1" alt="Sponsor 1"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+2" alt="Sponsor 2"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+3" alt="Sponsor 3"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+4" alt="Sponsor 4"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+5" alt="Sponsor 5"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+6" alt="Sponsor 6"></div>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="sponsor-content">
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+1" alt="Sponsor 1"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+2" alt="Sponsor 2"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+3" alt="Sponsor 3"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+4" alt="Sponsor 4"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+5" alt="Sponsor 5"></div>
+                <div class="sponsor-logo"><img src="https://via.placeholder.com/180x80?text=Sponsor+6" alt="Sponsor 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="30">0</div>
+                <div class="stat-label">Partnered Teams</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="2500">0</div>
+                <div class="stat-label">People Reached</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Current Volunteers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="blog-grid">
+        <h2>Latest Updates</h2>
+        <div class="grid-container">
+            <!-- Blog posts will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
